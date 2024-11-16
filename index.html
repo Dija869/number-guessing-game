@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Guessing Game</h1>
+
+        <!--  Level Selection -->
+        <p> Choose level :
+            <select id="level">
+                <option value="">Select Difficulty</option>
+                <option value="easy">Easy (1-10)</option>
+                <option value="medium">Medium (1-100)</option>
+                <option value="hard">Hard (1-500)</option>
+            </select>
+        </p>
+        <!-- Start Button -->
+        <button id="start-btn" onclick="startGame()">Start Game</button>
+
+        <!-- Game Content -->
+        <div id="game"></div>
+        <h1 id="last-heading">Leading Board</h1>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
